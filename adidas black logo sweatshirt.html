@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Products - KhatibShop </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="images/logo by wix.jpg" width="200px"></a>
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="product.html">Products</a></li>
+                    <li><a href="https://www.instagram.com/p/CVvgAgls-96/?utm_source=ig_web_copy_link">About</a></li>
+                    <li><a href="https://wa.me/message/OGKHVC6ITGESL1">Contact</a></li>
+                    <li><a href="account.html">Account</a></li>
+                </ul>
+            </nav>
+            <img src="images/cart.png" width="30px" height="30px">
+            <img src="images/menu icon.jpeg" class="menu-icon" onclick="menutoggle()">
+        </div>
+    </div>
+    </div>
+    <!----cart details---->
+    <div class="small-container cart-page">
+        <table>
+            <tr>
+                <th>Product</th>
+                <th>Quantity</th>
+                <th>Subtotal</th>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="images/Adidas black sweatshirt.jpeg">
+                        <div>
+                            <p>Adidas Black sweatshirt</p>
+                            <small>15.00$</small>
+                            <br>
+                            <a href="product.html"><em>Remove</em></a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>15.00$</td>
+            </tr>
+        </table>
+    </div>
+
+    <!-----footer---->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Sign up</h3>
+                    <p>If you already have an account<br>log in to your account</p>
+                </div>
+                <div class="footer-col-2">
+                    <img src="images/logo by wix.jpg">
+                    <p>Our purpose is to give you the best quality of clothes</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Follow us</h3>
+                    <ul>
+                        <li><a href="https://www.instagram.com/p/CVvgAgls-96/?utm_source=ig_web_copy_link">Instagram</a></li>
+                        <li>
+                            <a href="https://chat.whatsapp.com/C3fyWwjfmFr41tMsaqF6fx">Join our whatsapp group</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2021 - KhatibShop - Developed by
+                <a href="https://instagram.com/walid_ayoub320?utm_medium=copy_link">Walid Ayoub</a></p>
+        </div>
+    </div>
+    <!----js for togglemenu-->
+    <script>
+        var MenuItems = Document.getElementById("MenuItems");
+        MenuItems.style.maxHeight = "0px";
+
+        function menutoggle() {
+            if (MenuItems.style.maxHeight == "0px") {
+                MenuItems.style.maxHeight = "200px";
+            } else {
+                MenuItems.style.maxHeight = "0px";
+            }
+        }
+    </script>
+
+</body>
+
+</html>
